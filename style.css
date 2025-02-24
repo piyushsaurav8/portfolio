@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.05rem;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.firstSection > div {
+  width: 40%;
+}
+
+.leftSection {
+  font-size: 3rem;
+}
+
+.rightSection img {
+  height: 450px;
+  width: 450px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.purple,
+#element {
+  color: rgb(170, 107, 228);
+}
+
+#molecule {
+  color: rgb(107, 170, 228);
+}
+
+.secondSection {
+  max-width: 90vw;
+  margin: 80px;
+  text-align: left;
+}
+
+main hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.8);
+  margin: 50px auto;
+  width: 80%;
+  transition: 0.3s;
+}
+
+.secondSection h1 {
+  font-size: 2rem;
+}
+
+.gray {
+  color: gray;
+}
+.box {
+  width: 80;
+  display: flex;
+  justify-content: space-evenly;
+}
+.video1,
+.video2,
+.image {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(106, 17, 203, 0.8), 0 0 25px rgba(37, 117, 252, 0.8);
+  transition: 0.3s;
+
+}
+.video1:hover, .video2:hover, .image:hover {
+  box-shadow: 0 0 25px rgba(106, 17, 203, 1), 0 0 50px rgba(37, 117, 252, 1);
+  transform: scale(1.02);
+}
+/* Footer Styling */
+footer {
+  background-color: #19192f;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.foot a {
+  text-decoration: none;
+  margin: 20px;
+  color: yellow;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.foot a:hover {
+  color: purple;
+  font-size: 1.02rem;
+}
+
+.last {
+  color: grey;
+  font-size: 0.9rem;
+}
+/* Phone Card Styling */
+.phone-container {
+    position: relative;
+    display: inline-block;
+}
+
+.phone-card {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Show card on hover */
+.phone-container:hover .phone-card {
+    display: block;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.3s;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.8);
+}
+
+/* Button Glow Effect on Hover */
+.btn:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  box-shadow: 0 0 20px rgba(106, 17, 203, 1), 0 0 40px rgba(37, 117, 252, 1);
+  transform: scale(1.05);
+}
+
+/* Button Click Effect */
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.6);
+}
+main hr {
+ 
+}
+
+/* Glowing Effect on Hover */
+main hr:hover {
+  box-shadow: 0 0 20px rgba(106, 17, 203, 1), 0 0 40px rgba(37, 117, 252, 1);
+  height: 3px;
+}
